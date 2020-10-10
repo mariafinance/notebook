@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 from openpyxl import load_workbook
-wb = load_workbook('/Users/maria/Job/Python/Ws.xlsx')  # Work Book
+wb = load_workbook('/Users/maria/Job/Python/Ws.xlsx')  # Work Book file that I have 
 ws = wb['Sheet2']  # Work Sheet
 column = ws['C']  # Column
 tickers_list = [column[x].value for x in range(len(column))]
